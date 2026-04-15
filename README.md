@@ -39,6 +39,26 @@ O jogo também pode ser acessado diretamente pelo navegador em:
 
 ---
 
+## 💾 Instalação local
+
+Caso queira instalar esta extensão sem publicá-la no marketplace:
+
+1. Gere o arquivo `.vsix` com:
+   ```bash
+   vsce package
+   ```
+2. No VS Code, abra a aba **Extensões** (`Ctrl+Shift+X`)
+3. Clique nos `...` (três pontos) no canto superior direito
+4. Selecione **"Install from VSIX..."**
+5. Escolha o arquivo `pokerogue-viewer-0.0.1.vsix`
+
+Ou via terminal:
+```bash
+code --install-extension pokerogue-viewer-0.0.1.vsix
+```
+
+---
+
 ## Requisitos
 
 - VS Code `^1.115.0`

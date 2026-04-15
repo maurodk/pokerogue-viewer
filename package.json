@@ -2,6 +2,7 @@
   "name": "pokerogue-viewer",
   "displayName": "PokeRogue Viewer",
   "description": "A unofficial PokeRogue game viewer inside VS Code!",
+  "icon": "images/icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.115.0"
