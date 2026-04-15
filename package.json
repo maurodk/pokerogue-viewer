@@ -12,24 +12,6 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "viewsContainers": {
-      "panel": [
-        {
-          "id": "pokerogue-panel",
-          "title": "PokeRogue",
-          "icon": "images/icon.svg"
-        }
-      ]
-    },
-    "views": {
-      "pokerogue-panel": [
-        {
-          "type": "webview",
-          "id": "pokerogue.sidebarView",
-          "name": "PokeRogue"
-        }
-      ]
-    },
     "commands": [
       {
         "command": "pokerogue.open",
