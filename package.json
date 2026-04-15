@@ -1,7 +1,7 @@
 {
   "name": "pokerogue-viewer",
   "displayName": "PokeRogue Viewer",
-  "description": "Open PokeRogue (pokerogue.net) directly inside VS Code using a built-in WebView panel.",
+  "description": "A unofficial PokeRogue game viewer inside VS Code!",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.115.0"
