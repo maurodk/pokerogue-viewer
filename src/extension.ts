@@ -1,7 +1,23 @@
 import * as vscode from 'vscode';
 
+class PokerogueSidebarProvider implements vscode.WebviewViewProvider {
+    public static readonly viewType = 'pokerogue.sidebarView';
+
+    resolveWebviewView(webviewView: vscode.WebviewView) {
+        webviewView.webview.options = { enableScripts: true };
+        webviewView.webview.html = getWebviewContent();
+    }
+}
+
 export function activate(context: vscode.ExtensionContext) {
     console.log('PokeRogue Viewer ativado!');
+
+    const sidebarProvider = new PokerogueSidebarProvider();
+    context.subscriptions.push(
+        vscode.window.registerWebviewViewProvider(PokerogueSidebarProvider.viewType, sidebarProvider, {
+            webviewOptions: { retainContextWhenHidden: true }
+        })
+    );
 
     const openPokerogue = vscode.commands.registerCommand('pokerogue.open', () => {
         const panel = vscode.window.createWebviewPanel(
